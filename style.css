@@ -68,6 +68,8 @@ body {
             font-size: 15px;
             margin-top: 5px;
             height: 100%;
+            font-size: medium;
+            overflow: hidden;
             
         }
         
@@ -82,26 +84,29 @@ body {
         }
         
         .inner {
-            position: absolute;
+            position: static;
             width: 80%;
-            margin-top: 70%;
+            margin-top: 5px;
             left: 0;
             margin-left: 20px;
-           
+            overflow-y: scroll;
+            box-sizing: content-box;
         }
         
         .box1 {
             position: static;
-            width: 80%;
+            width: 80%; 
             margin-left: 20px;
-           
+            margin-top: 10px
         }
         
         .box2 {
             position: static;
             width: 80%;
             margin-left: 20px;
-            
+            margin-top: 5px;
+            overflow-y: scroll;
+            box-sizing: content-box;
         }
         
         .send-btn {
@@ -111,7 +116,12 @@ body {
             background-color: #000;
             color: aliceblue;
         }
-                
+        
+        .form {
+            font-size: smaller;
+            padding: 0%;
+            row-gap: 0%;;
+        }
   
   }    
 
@@ -119,7 +129,7 @@ body {
 
 /* @media only screen and (max-width: 460px) { */
     @media screen 
-    and (device-width: 360px) 
+    and (device-width: 300px) 
     and (device-height: 640px) 
     and (-webkit-device-pixel-ratio: 4) 
     and (orientation: portrait) {
@@ -130,7 +140,7 @@ body {
                 font-size: 15px;
                 margin-top: 5px;
                 height: 100%;
-                
+                overflow: hidden;
             }
            
             /* .inner {
@@ -148,18 +158,26 @@ body {
                 margin-top: 80%;
                 left: 0;
                 margin-left: 20px;
-                height: auto;
+                overflow-y: scroll;
+                box-sizing: content-box;
                           
             }
             
             .inner {
-                font-size: medium;
+                font-size: smaller;
                 position: absolute;
                 width: 100%;
                 margin-top: 70%;
                 left: 0;
                 margin-left: 20px;
-               
+                overflow-y: scroll;
+                box-sizing: content-box;
+            }
+
+            .form {
+                font-size: smaller;
+                padding: 0%;
+                row-gap: 0%;
             }
         
             .box1 {
