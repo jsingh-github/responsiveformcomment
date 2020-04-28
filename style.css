@@ -59,33 +59,35 @@ body {
 }
 
 
-/* @media only screen and (max-width: 650px) { */
-    @media only screen 
-    and (min-device-width: 768px) 
-    and (max-device-width: 1024px) 
-    and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (max-width: 650px) {
+
 
         .container {
             border: 1px solid;
             position: relative;
             font-size: 15px;
             margin-top: 5px;
-            min-height: 100%;
+            height: 100%;
+            
         }
         
-        .panel {
+        .panel-right {
+          
+            width: 80%;
+            margin-top: 10%;
+            left: 0;
+            margin-left: 20px;
             
-            margin-bottom: 20px;
-            
+                      
         }
         
         .inner {
             position: absolute;
             width: 80%;
-            margin-top: 80%;
+            margin-top: 70%;
             left: 0;
             margin-left: 20px;
-            box-sizing: content-box;
+           
         }
         
         .box1 {
@@ -111,7 +113,7 @@ body {
         }
                 
   
-  }   
+  }    
 
 
 
@@ -122,23 +124,42 @@ body {
     and (-webkit-device-pixel-ratio: 4) 
     and (orientation: portrait) {
     
-        .container {
-            position: relative;
-            font-size: 14px;
-            margin-bottom: 60px;
-            margin-top: 10px;
-         
-            box-sizing: border-box;
+            .container {
+                border: 1px solid;
+                position: relative;
+                font-size: 15px;
+                margin-top: 5px;
+                height: 100%;
+                
             }
            
-            .inner {
+            /* .inner {
             width: 80%;
             position: absolute;
             left: 0;
             margin-left: 20px;
             margin-top: 80%;
+     
+            } */
+
+            .panel-right {
+          
+                width: 100%;
+                margin-top: 80%;
+                left: 0;
+                margin-left: 20px;
+                height: auto;
+                          
+            }
             
-            
+            .inner {
+                font-size: medium;
+                position: absolute;
+                width: 100%;
+                margin-top: 70%;
+                left: 0;
+                margin-left: 20px;
+               
             }
         
             .box1 {
@@ -160,9 +181,6 @@ body {
   }
     
 
-
-
-
 .group {
     padding: 2px;
     display: flex;
@@ -170,6 +188,7 @@ body {
     width: 100%;
     box-sizing: content-box;
 }
+
 .form h1 {
     margin-left: 10px;
    
@@ -183,7 +202,7 @@ body {
 label {
     margin: 5px;
     color: aliceblue;
-    font-size: larger;
+    font-size: medium;
 }
 .send-btn {
     
