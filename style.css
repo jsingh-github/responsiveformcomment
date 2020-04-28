@@ -62,20 +62,23 @@ body {
 @media only screen and (max-width: 650px) {
    
 .container {
-    
+    border: 1px solid;
     position: relative;
     font-size: 15px;
     margin-top: 5px;
     min-height: 100%;
 }
 
-
+.panel {
+    
+    margin-bottom: 20px;
+    
+}
 
 .inner {
     position: absolute;
     width: 80%;
-    position: absolute;
-    margin-top: 55%;
+    margin-top: 80%;
     left: 0;
     margin-left: 20px;
     box-sizing: content-box;
