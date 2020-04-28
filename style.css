@@ -129,8 +129,8 @@ body {
 
 /* @media only screen and (max-width: 460px) { */
     @media screen 
-    and (device-width: 300px) 
-    and (device-height: 640px) 
+    and (device-width: 414px) 
+    and (device-height: 846px) 
     and (-webkit-device-pixel-ratio: 4) 
     and (orientation: portrait) {
     
@@ -165,7 +165,7 @@ body {
             
             .inner {
                 font-size: smaller;
-                position: absolute;
+                position: static;
                 width: 100%;
                 margin-top: 70%;
                 left: 0;
@@ -181,17 +181,19 @@ body {
             }
         
             .box1 {
-            
-            width: 80%;
-            margin-left: 20px;
-        
+                position: static;
+                width: 80%; 
+                margin-left: 20px;
+                margin-top: 10px
             }
-        
+            
             .box2 {
-                
-            width: 80%;
-            margin-left: 20px;
-           
+                position: static;
+                width: 80%;
+                margin-left: 20px;
+                margin-top: 5px;
+                overflow-y: scroll;
+                box-sizing: content-box;
             }
         
         
