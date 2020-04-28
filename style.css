@@ -1,6 +1,12 @@
 
-html, body {
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+body {
     height:100%;
+   
 }
 
 body {
@@ -12,7 +18,7 @@ body {
     
     width: 80%;
     height: 100%;
-   margin: auto;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
 }
@@ -59,7 +65,7 @@ body {
 }
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 760px)  {
 
 
         .container {
@@ -127,12 +133,8 @@ body {
 
 
 
-/* @media only screen and (max-width: 460px) { */
-    @media screen 
-    and (device-width: 414px) 
-    and (device-height: 846px) 
-    and (-webkit-device-pixel-ratio: 4) 
-    and (orientation: portrait) {
+@media only screen and (max-width: 414px) { 
+ 
     
             .container {
                 border: 1px solid;
@@ -159,7 +161,7 @@ body {
                 left: 0;
                 margin-left: 20px;
                 overflow-y: scroll;
-                box-sizing: content-box;
+            
                           
             }
             
@@ -196,9 +198,7 @@ body {
                 box-sizing: content-box;
             }
         
-        
-
-  }
+}
     
 
 .group {
